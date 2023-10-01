@@ -42,13 +42,8 @@ class HistoryActivity : AppCompatActivity() {
                     binding?.rvHistory?.visibility = View.VISIBLE
                     binding?.tvNoDataAvailable?.visibility = View.INVISIBLE
 
-                    val datesList = ArrayList<HistoryEntity>()
-                    for(date in allCompletedDatesList)
-                    {
-                        datesList.add(date)
-                    }
                     binding?.rvHistory?.layoutManager = LinearLayoutManager(this@HistoryActivity)
-                    binding?.rvHistory?.adapter = HistoryAdapter(datesList)
+                    binding?.rvHistory?.adapter = HistoryAdapter(allCompletedDatesList)
                 } else {
                     binding?.tvHistory?.visibility = View.GONE
                     binding?.rvHistory?.visibility = View.GONE

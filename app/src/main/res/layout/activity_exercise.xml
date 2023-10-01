@@ -10,7 +10,6 @@
         android:id="@+id/toolbarExercise"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
-        android:theme="@style/ToolbarTheme"
         android:background="@color/white"
         app:titleTextColor="@color/colorPrimary"
         app:layout_constraintTop_toTopOf="parent"

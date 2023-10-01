@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.comiccoder.a7minutesworkout.databinding.ItemHistoryRowBinding
 import com.comiccoder.a7minutesworkout.models.HistoryEntity
 
-class HistoryAdapter(private val items: ArrayList<HistoryEntity>): RecyclerView.Adapter<HistoryAdapter.ViewHolder>() {
+class HistoryAdapter(private val items: List<HistoryEntity>): RecyclerView.Adapter<HistoryAdapter.ViewHolder>() {
 
     class ViewHolder(binding: ItemHistoryRowBinding): RecyclerView.ViewHolder(binding.root){
         val llHistoryItemMain = binding.llHistoryItemMain
