@@ -18,6 +18,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding?.flBmi?.setOnClickListener {
+            startActivity(Intent(this@MainActivity, BMIActivity::class.java))
+        }
+
+        binding?.flHistory?.setOnClickListener {
+            startActivity(Intent(this@MainActivity, HistoryActivity::class.java))
+        }
 
     }
 
